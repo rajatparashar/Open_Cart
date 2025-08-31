@@ -5,27 +5,56 @@
 
 	<listeners>
 		<listener
-			class-name="com.qa.opencart.listeners.TestAllureListener"></listener>
-		 <listener
-			class-name="com.qa.opencart.listeners.AnnotationTransformer"></listener>
+			class-name="com.qa.opencart.listeners.TestAllureListener" />
+		<listener
+			class-name="com.qa.opencart.listeners.AnnotationTransformer" />
 	</listeners>
 
-	<test name="Login Page Test_chrome">
-		<parameter name="browser" value="chrome"></parameter>
+	<test name="Login Page Test_chrome_123">
+		<parameter name="browser" value="chrome" />
 		<parameter name="browserversion" value="123.0" />
-		<parameter name="testname" value="Login Page Test" />
 		<classes>
 			<class name="com.qa.opencart.tests.LoginPageTest" />
 		</classes>
 	</test>
 
-	<test name="Login Page Test_firefox">
-		<parameter name="browser" value="firefox"></parameter>
+	<test name="Home Page Test_chrome_124">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="124.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.HomePageTest" />
+		</classes>
+	</test>
+
+	<test name="Product Info Page_chrome_126">
+		<parameter name="browser" value="chrome" />
+		<parameter name="browserversion" value="126.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
+		</classes>
+	</test>
+
+	<test name="Login Page Test_firefox_100">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserversion" value="100.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.LoginPageTest" />
+		</classes>
+	</test>
+
+	<test name="Home Page Test_firefox_124">
+		<parameter name="browser" value="firefox" />
+		<parameter name="browserversion" value="124.0" />
+		<classes>
+			<class name="com.qa.opencart.tests.HomePageTest" />
+		</classes>
+	</test>
+
+ <test name="Product Info Page_firefox_125">
+		<parameter name="browser" value="firefox" />
 		<parameter name="browserversion" value="125.0" />
-		<parameter name="testname" value="Login Page Test" />
 		<classes>
-			<class name="com.qa.opencart.tests.LoginPageTest" />
+			<class name="com.qa.opencart.tests.ProductInfoPageTest" />
 		</classes>
-	</test>
-
+	</test> 
 </suite>
